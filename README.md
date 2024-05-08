@@ -26,7 +26,7 @@ This app makes use of the free option.
 
 ## Running the app:
 
-Navigate to the main catalog "chatbot". Use this command in console to start the app.
+Navigate to the main catalog "ai-chatbot". Use this command in console to start the app.
 
 *python app.py*
 
