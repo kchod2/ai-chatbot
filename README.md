@@ -30,10 +30,12 @@ Navigate to the main catalog "chatbot". Use this command in console to start the
 
 *python app.py*
 
-It will take some time to read the pdf files, index them and learn. In order for the chatbot to be focused on a given topic, the contents of the pdf files will be used as "context" for the prompt. The files' content will be converted into embeddings in order to reduce complexity, as free usage of GPT-3.5 only supports requests up to about 8000 tokens. When the process is finished, you will see two new sub-folders created in the main directory. “Indexes” is the catalog that has all the indexes based on the data in the “trainingData”. The flagged responses will be saved in the “flagged” catalog. Wait until you see the url where you can test your trained chat model:
+It will take some time to read the pdf files, index them and learn. In order for the chatbot to be focused on a given topic, the contents of the pdf files will be used as "context" for the prompt. The files' content will be converted into embeddings in order to reduce complexity, as free usage only supports requests up to about 8000 tokens. When the process is finished, you will see two new sub-folders created in the main directory. “Indexes” is the catalog that has all the indexes based on the data in the “trainingData”. The flagged responses will be saved in the “flagged” catalog. Wait until you see the url where you can test your trained chat model:
 
 (http://127.0.0.1:7860/)
 
 Open the link in your browser. You will see a simple chat UI with a window to enter your prompts / questions on the left side. The answers from the chatbot will appear on the right side. The app needs to keep running in the background in order for the chat UI to work.
 
-*Hint*: When the AI encounters a question on a different topic, it will decline to answer. Whenever it mentions "context", it refers to the custom data it was trained on (pdf files in the trainingData catalog).
+When the AI encounters a question on a different topic, it will decline to answer. Whenever it mentions "context", it refers to the custom data it was trained on (pdf files in the trainingData catalog).
+
+You can try to improve the quality of answers by tinkering with the model's parameters in Settings.llm. In this example temperature (the parameter that controls randomness) was maxed out, as it visibly improved information retrieval.
