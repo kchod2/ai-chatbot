@@ -15,7 +15,7 @@ Use this command to install the dependent libraries that will be used to train c
 + Azureopenai — Azure OpenAI python library
 + llama-index — LlamaIndex data framework for the LLM application
 + pypdf — The open source python library that will be used to read the pdf files to train the AI chat bot on
-+ gradio — Gradio.app is a simple way to create a simple web UI to demonstrate the application
++ gradio — Gradio.app is a simple way to create a web UI to demonstrate the application
 
 ## Getting the API key from Azure OpenAI:
 
