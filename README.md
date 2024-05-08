@@ -14,7 +14,7 @@ Use this command to install the dependent libraries that will be used to train c
 
 + Azureopenai — Azure OpenAI python library
 + llama-index — LlamaIndex data framework for the LLM application
-+ pypdf — The open source python library that will be used to read the pdf files to train the AI chat bot on
++ pypdf — The open source python library that will be used to read the pdf files to train the AI chatbot on
 + gradio — Gradio.app is a simple way to create a web UI to demonstrate the application
 
 ## Getting the API key from Azure OpenAI:
@@ -36,6 +36,6 @@ It will take some time to read the pdf files, index them and learn. In order for
 
 Open the link in your browser. You will see a simple chat UI with a window to enter your prompts / questions on the left side. The answers from the chatbot will appear on the right side. The app needs to keep running in the background in order for the chat UI to work.
 
-When the AI encounters a question on a different topic, it will decline to answer. Whenever it mentions "context", it refers to the custom data it was trained on (pdf files in the trainingData catalog).
+When the chatbot encounters a question on a different topic, it will decline to answer. Whenever it mentions "context", it refers to the custom data it was trained on (pdf files in the trainingData catalog).
 
-You can try to improve the quality of answers by tinkering with the model's parameters in Settings.llm. In this example temperature (the parameter that controls randomness) was maxed out, as it visibly improved information retrieval.
+You can try to improve the quality of answers by tinkering with the model's parameters in Settings.llm. In this example, temperature (the parameter that controls randomness) was maxed out, as it visibly improved information retrieval.
