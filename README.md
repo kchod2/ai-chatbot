@@ -1,10 +1,10 @@
 # chatbot
 **AI-based chat app trained with custom data**
 
+This is a simple instance of ChatGPT trained with custom data (drug-related pdf files), operated via a web UI, with additional limitations imposed to make it stay focused on a topic. 
+
 Based on the solution: https://medium.com/@sushwanth.n/how-to-train-chatgpt-with-your-custom-data-and-create-your-own-chatbot-6d525fc7f20f
 Updated to account for changes in functions/classes in more recent versions of some libraries
-
-This is a simple instance of ChatGPT trained with custom data (drug-related pdf files), operated via a web UI, with additional limitations imposed to make it stay focused on a topic. 
 
 # Dependent libraries:
 
