@@ -12,10 +12,10 @@ Use this command to install the dependent libraries that will be used to train c
 
 *pip install -r requirements.txt*
 
-Azureopenai — Azure OpenAI python library
-llama-index — LlamaIndex data framework for the LLM application
-pypdf — The open source python library that will be used to read the pdf files to train the AI chat bot on
-gradio — Gradio.app is a simple way to create a simple web UI to demonstrate the application
++ Azureopenai — Azure OpenAI python library
++ llama-index — LlamaIndex data framework for the LLM application
++ pypdf — The open source python library that will be used to read the pdf files to train the AI chat bot on
++ gradio — Gradio.app is a simple way to create a simple web UI to demonstrate the application
 
 ## Getting the API key from Azure OpenAI:
 
@@ -28,7 +28,7 @@ This app makes use of the free option.
 
 Navigate to the main catalog "chatbot". Use this command in console to start the app.
 
-python app.py
+*python app.py*
 
 It will take some time to read the pdf files, index them and learn. In order for the chatbot to be focused on a given topic, the contents of the pdf files will be used as "context" for the prompt. The files' content will be converted into embeddings in order to reduce complexity, as free usage of GPT-3.5 only supports requests up to about 8000 tokens. When the process is finished, you will see two new sub-folders created in the main directory. “Indexes” is the catalog that has all the indexes based on the data in the “trainingData”. The flagged responses will be saved in the “flagged” catalog. Wait until you see the url where you can test your trained chat model:
 
